@@ -1,0 +1,277 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#block-one {
+  font-family: 'Montserrat', sans-serif;
+  background: url(img/bg-one.jpg) no-repeat, black;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#block-one::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 1400px;
+  margin: auto;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+.menu {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header {
+  height: 80px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-fixed {
+  padding: 10px 101px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #F29527;
+  animation-name: show-header;
+  animation-duration: 1s;
+  z-index: 100;
+  height: 80px;
+}
+
+@keyframes show-header {
+  0% {
+    opacity: 0;
+    top: -90px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.menu-item {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+a:hover {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 67px;
+}
+
+.title {
+  margin-bottom: 60px;
+}
+
+.title-item {
+  margin: 0;
+  font-weight: 700;
+  font-size: 97px;
+  line-height: 118px;
+  color: #FFFFFF;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.bracket {
+  position: relative;
+  top: -26px;
+}
+
+.bracket-two {
+  position: relative;
+  top: -31px;
+}
+
+.description-item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.description-item {
+  max-width: 1000px;
+}
+
+.description-item:not(:last-child) {
+  margin-bottom: 44px;
+}
+
+.description {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.description__text {
+  margin-left: 40px;
+}
+
+.about {
+  padding: 17px 53px;
+  width: fit-content;
+  background-color: transparent;
+  border: 3px solid #F29527;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F29527;
+}
+
+@keyframes jump {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+button:hover {
+	background: #F29527;
+	color: #FFFFFF;
+	transition: 1s;
+  animation: jump 1s;
+}
+
+#block-two {
+  padding-bottom: 176px;
+  font-family: 'Montserrat', sans-serif;
+  background: url(img/bg-two.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.block-two__text {
+  padding: 46px 101px 0 101px;
+}
+
+.subtitle-two {
+  margin: 61px 0 52px 0;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+.table {
+  background: #F29527;
+  box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.34);
+  border-radius: 0 68px 68px 0;
+  width: fit-content;
+}
+
+.table-item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.table-content {
+  padding: 45px 128px 40px 101px;
+}
+
+.table-link {
+  margin-top: 34px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+#block-three {
+  font-family: 'Montserrat', sans-serif;
+  padding: 46px 101px 300px 101px;
+  background: url(img/bg-three.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 190px;
+}
+
+.partners-container {
+  justify-items: center;
+  display: grid;
+  grid-template-rows: 282px 1fr;
+}
+
+.partners-title {
+  margin-top: 42px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.partner-tele2 {
+  position: relative;
+  top: 70px;
+}

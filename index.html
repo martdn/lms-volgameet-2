@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <title>Volga</title>
+</head>
+<body>
+  <div id="block-one">
+    <div class="header">
+      <div class="header__inner container">
+        <img src="img/logo.svg" alt="#">
+        <nav class="menu">
+          <a href="#" class="menu-item">Главная</a>
+          <a href="#block-two" class="menu-item">Программа</a>
+          <a href="#" class="menu-item">Мастера</a>
+          <a href="#block-three" class="menu-item">Партнеры</a>
+          <a href="#" class="menu-item">Контакты</a>
+          <a href="#" class="menu-item">Архив видео</a>
+        </nav>
+      </div>
+    </div>
+
+    <section class="main container">
+      <div class="title">
+        <div class="subtitle">Международный фестиваль юношеских СМИ и киностудий</div>
+        <h1 class="title-item">Волжские встречи</h1>
+      </div>
+      <div class="description">
+        <div>
+          <div><img class="bracket" src="img/up.svg" alt=""></div>
+          <div><img class="bracket-two" src="img/down.svg" alt=""></div>
+        </div>
+        <div class="description__text">
+          <div class="description-item">Добро пожаловать всем начинающим и молодым журналистам,кинематографистам,руководителям юношеских СМИ и киностудий,для кого фестиваль в «Волжскиевстречи» стал частью жизни.</div>
+          <div class="description-item">Международный фестиваль детских и юношеских СМИ и киностудий«Волжские встречи-32» при поддержке Генерального партнёра — компанииTele2 собрал в Казани больше 600участников! Его учредители:Общероссийская общественная детская организация «Лигаюныхжурналистов» и Детское творческое объединение «ЮНПРЕСС». Фестивальявляетсяфестивалем-партнёром Всероссийского открытого фестиваляфорума детского и юношескогоэкранного творчества «Бумеранг».</div>
+        </div>
+      </div>
+      <button class="about">Узнать больше</button>
+    </section>
+  </div>
+
+  <div id="block-two">
+    <div class="block-two__text">
+      <div class="title-item">Программа</div>
+      <div class="subtitle-two">Добро пожаловать всем начинающим и молодым журналистам,кинематографистам,руководителям юношеских СМИ и киностудий,для кого фестиваль в «Волжскиев30 АПРЕЛЯ
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="table-content">
+        <div class="table-item">07.00 – 18.00 – Заезд участников в Казань, экскурсия по городу.<br>
+          11.00 – 12.00 – Спектакль «Март и слива» Молодежного театра «Вдох». Актовый зал лагеря «Солнечный».<br>
+          12.00 – 16.00 – Экскурсии в музеи города Казань.<br>
+          14.00 – 18.00 – Отправление в лагерь «Солнечный» и лагерь «Восток». Место встречи – жд. Вокзалы Казань-1 и Казань-2.<br>
+          14.30 – 19.00 – Заселение и знакомство с территорией лагерей «Солнечный» и «Восток».<br>
+          17.00 – 18.00 – Игровой тренинг «Пространство эмоционального интеллекта». Ведущая Марина Телешева. Клуб, 2 этаж, аудитория
+        </div>
+        <div class="table-link">
+          <a href="">Подробнее </a>
+          <img src="img/arrow.svg" alt="">
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <div id="block-three">
+    <div class="title-item">Генеральные партнеры</div>
+
+    <div class="partners">
+      <div class="partners-container">
+        <img src="img/block3-two.png" alt="">
+        <div class="partners-title">Министерство цифрового развития</div>
+      </div>
+      <div class="partners-container">
+        <img class="partner-tele2" src="img/block3-one.png" alt="">
+        <div class="partners-title">ООО «Т2 Мобайл» (Tele2)</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.onscroll = function showHeader() {
+    var header = document.querySelector('.header');
+
+      if(window.pageYOffset >= 170) {
+          header.classList.add('header-fixed');
+      }
+      else {
+          header.classList.remove('header-fixed');
+      }
+    }
+  </script>
+</body>
+</html>
